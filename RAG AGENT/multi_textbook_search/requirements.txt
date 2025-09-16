@@ -1,0 +1,16 @@
+# Required dependencies
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+numpy>=1.21.0
+
+# AI/LLM dependencies
+google-generativeai>=0.3.0
+google-cloud-aiplatform>=1.38.0
+
+# Optional dependencies for keyword search
+rank-bm25>=0.2.2
+
+# Development dependencies
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0

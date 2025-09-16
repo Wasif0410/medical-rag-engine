@@ -1,0 +1,2 @@
+# Chapter Detection System - Essential Dependencies
+PyMuPDF>=1.23.0  # PDF processing

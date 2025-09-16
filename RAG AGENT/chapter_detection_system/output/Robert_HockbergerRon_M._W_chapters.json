@@ -1,0 +1,2050 @@
+[
+  {
+    "title": "Cover",
+    "start_page": 1,
+    "end_page": 1,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "ROSEN’S Emergency Medicine\rConcepts and Clinical Practice",
+    "start_page": 2,
+    "end_page": 2,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Copyright",
+    "start_page": 3,
+    "end_page": 3,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Acknowledgments",
+    "start_page": 4,
+    "end_page": 4,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Contributors",
+    "start_page": 5,
+    "end_page": 17,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Preface to the Tenth Edition",
+    "start_page": 18,
+    "end_page": 18,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Preface to the Ninth Edition",
+    "start_page": 19,
+    "end_page": 19,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "How This Medical Textbook Should Be Viewed by the Practicing Clinician and Judicial System",
+    "start_page": 20,
+    "end_page": 20,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "1 - Airway",
+    "start_page": 21,
+    "end_page": 45,
+    "pages": 25,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "2 - Mechanical Ventilation and Noninvasive Ventilatory Support",
+    "start_page": 46,
+    "end_page": 56,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "3 - Shock",
+    "start_page": 57,
+    "end_page": 65,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "4 - Brain Resuscitation",
+    "start_page": 66,
+    "end_page": 76,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "5 - Adult Resuscitation",
+    "start_page": 77,
+    "end_page": 90,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "6 - Pain Management",
+    "start_page": 91,
+    "end_page": 110,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "7 - Procedural Sedation and Analgesia",
+    "start_page": 111,
+    "end_page": 121,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "8 - Fever in the Adult Patient",
+    "start_page": 122,
+    "end_page": 128,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "9 - Weakness",
+    "start_page": 129,
+    "end_page": 135,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "10 - Cyanosis",
+    "start_page": 136,
+    "end_page": 144,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "11 - Syncope",
+    "start_page": 145,
+    "end_page": 153,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "12 - Depressed Consciousness and Coma",
+    "start_page": 154,
+    "end_page": 163,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "13 - Confusion",
+    "start_page": 164,
+    "end_page": 170,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "14 - Seizures",
+    "start_page": 171,
+    "end_page": 184,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "15 - Dizziness and Vertigo",
+    "start_page": 185,
+    "end_page": 194,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "16 - Headache",
+    "start_page": 195,
+    "end_page": 202,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "17 - Diplopia",
+    "start_page": 203,
+    "end_page": 212,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "18 - Red and Painful Eye",
+    "start_page": 213,
+    "end_page": 230,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "19 - Sore Throat",
+    "start_page": 231,
+    "end_page": 238,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "20 - Hemoptysis",
+    "start_page": 239,
+    "end_page": 246,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "21 - Dyspnea",
+    "start_page": 247,
+    "end_page": 255,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "22 - Chest Pain",
+    "start_page": 256,
+    "end_page": 266,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "23 -\rAbdominal Pain",
+    "start_page": 267,
+    "end_page": 277,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "24 - Jaundice",
+    "start_page": 278,
+    "end_page": 284,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "25 - Nausea and Vomiting",
+    "start_page": 285,
+    "end_page": 299,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "26 - Gastrointestinal Bleeding",
+    "start_page": 300,
+    "end_page": 306,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "27 - Diarrhea",
+    "start_page": 307,
+    "end_page": 315,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "28 - Constipation",
+    "start_page": 316,
+    "end_page": 322,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "29 - Acute Pelvic Pain",
+    "start_page": 323,
+    "end_page": 330,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "30 - Vaginal Bleeding",
+    "start_page": 331,
+    "end_page": 337,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "31 - Back Pain",
+    "start_page": 338,
+    "end_page": 349,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "32 - Multiple Trauma",
+    "start_page": 350,
+    "end_page": 366,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "33 - Head Trauma",
+    "start_page": 367,
+    "end_page": 400,
+    "pages": 34,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "34 - Facial Trauma",
+    "start_page": 401,
+    "end_page": 419,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "35 - \rSpinal Trauma",
+    "start_page": 420,
+    "end_page": 449,
+    "pages": 30,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "36 - Neck Trauma",
+    "start_page": 450,
+    "end_page": 461,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "37 - Thoracic Trauma",
+    "start_page": 462,
+    "end_page": 484,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "38 - Abdominal Trauma",
+    "start_page": 485,
+    "end_page": 500,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "39 - Genitourinary Trauma",
+    "start_page": 501,
+    "end_page": 520,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "40 - Peripheral Vascular Trauma",
+    "start_page": 521,
+    "end_page": 532,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "41 - General Principles of Orthopedic Injuries",
+    "start_page": 533,
+    "end_page": 553,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "42 - Hand Injuries",
+    "start_page": 554,
+    "end_page": 597,
+    "pages": 44,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "43 - Wrist and Forearm Injuries",
+    "start_page": 598,
+    "end_page": 621,
+    "pages": 24,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "44 - Humerus and Elbow Injuries",
+    "start_page": 622,
+    "end_page": 642,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "45 - Shoulder Injuries",
+    "start_page": 643,
+    "end_page": 664,
+    "pages": 22,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "46 - Pelvic Injuries",
+    "start_page": 665,
+    "end_page": 684,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "47 - Femur and Hip Injuries",
+    "start_page": 685,
+    "end_page": 708,
+    "pages": 24,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "48 - Knee and Lower Leg Injuries",
+    "start_page": 709,
+    "end_page": 731,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "49 - Ankle and Foot Injuries",
+    "start_page": 732,
+    "end_page": 762,
+    "pages": 31,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "50 - Wound Management Principles",
+    "start_page": 763,
+    "end_page": 779,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "51 - Foreign Bodies",
+    "start_page": 780,
+    "end_page": 797,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "52 - Mammalian Bites",
+    "start_page": 798,
+    "end_page": 808,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "53 - Venomous Animal Injuries",
+    "start_page": 809,
+    "end_page": 829,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "54 - Thermal Injuries",
+    "start_page": 830,
+    "end_page": 841,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "55 - Chemical Injuries",
+    "start_page": 842,
+    "end_page": 856,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "56 - Oral Medicine",
+    "start_page": 857,
+    "end_page": 877,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "57 - Ophthalmology",
+    "start_page": 878,
+    "end_page": 911,
+    "pages": 34,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "58 - Otolaryngology",
+    "start_page": 912,
+    "end_page": 926,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "59 - Asthma",
+    "start_page": 927,
+    "end_page": 941,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "60 - Chronic Obstructive Pulmonary Disease",
+    "start_page": 942,
+    "end_page": 954,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "61 - Upper Respiratory Tract Infections",
+    "start_page": 955,
+    "end_page": 969,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "62 - Pneumonia",
+    "start_page": 970,
+    "end_page": 981,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "63 - Pleural Disease",
+    "start_page": 982,
+    "end_page": 992,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "64 - Acute Coronary Syndromes",
+    "start_page": 993,
+    "end_page": 1037,
+    "pages": 45,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "65 - Dysrhythmias",
+    "start_page": 1038,
+    "end_page": 1069,
+    "pages": 32,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "66 - Implantable Cardiac Devices",
+    "start_page": 1070,
+    "end_page": 1086,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "67 - Heart Failure",
+    "start_page": 1087,
+    "end_page": 1112,
+    "pages": 26,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "68 - Pericardial and Myocardial Disease",
+    "start_page": 1113,
+    "end_page": 1128,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "69 - Infective Endocarditis and Valvular Heart Disease",
+    "start_page": 1129,
+    "end_page": 1138,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "70 - Hypertension",
+    "start_page": 1139,
+    "end_page": 1155,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "71 - Aortic Dissection",
+    "start_page": 1156,
+    "end_page": 1164,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "72 - Abdominal Aortic Aneurysm",
+    "start_page": 1165,
+    "end_page": 1175,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "73 - Peripheral Arteriovascular Disease",
+    "start_page": 1176,
+    "end_page": 1193,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "74 - Pulmonary Embolism and Deep Vein Thrombosis",
+    "start_page": 1194,
+    "end_page": 1216,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "75 - Esophagus, Stomach, and Duodenum",
+    "start_page": 1217,
+    "end_page": 1234,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "76 - Liver and Biliary Tract Disorders",
+    "start_page": 1235,
+    "end_page": 1264,
+    "pages": 30,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "77 - Pancreas",
+    "start_page": 1265,
+    "end_page": 1275,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "78 - Small Intestine",
+    "start_page": 1276,
+    "end_page": 1288,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "79 - Acute Appendicitis",
+    "start_page": 1289,
+    "end_page": 1299,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "80 - Gastroenteritis",
+    "start_page": 1300,
+    "end_page": 1320,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "81 - Large Intestine",
+    "start_page": 1321,
+    "end_page": 1341,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "82 - Anorectum",
+    "start_page": 1342,
+    "end_page": 1354,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "83 - Renal Failure",
+    "start_page": 1355,
+    "end_page": 1374,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "84 -  Sexually Transmitted Infections",
+    "start_page": 1375,
+    "end_page": 1388,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "85 - Urologic Disorders",
+    "start_page": 1389,
+    "end_page": 1413,
+    "pages": 25,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "86 - Gynecologic Disorders",
+    "start_page": 1414,
+    "end_page": 1423,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "87 - Stroke",
+    "start_page": 1424,
+    "end_page": 1446,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "88 - Seizure",
+    "start_page": 1447,
+    "end_page": 1460,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "89 - Headache Disorders",
+    "start_page": 1461,
+    "end_page": 1476,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "90 - Delirium and Dementia",
+    "start_page": 1477,
+    "end_page": 1490,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "91 - Brain and Cranial Nerve Disorders",
+    "start_page": 1491,
+    "end_page": 1502,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "92 - Spinal Cord Disorders",
+    "start_page": 1503,
+    "end_page": 1514,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "93 - Peripheral Nerve Disorders",
+    "start_page": 1515,
+    "end_page": 1526,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Contents",
+    "start_page": 1527,
+    "end_page": 1527,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Introduction",
+    "start_page": 1528,
+    "end_page": 1528,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Epstein's Black Book Unredacted!",
+    "start_page": 1529,
+    "end_page": 1586,
+    "pages": 58,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "65th St NYC",
+    "start_page": 1587,
+    "end_page": 1587,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "America",
+    "start_page": 1588,
+    "end_page": 1590,
+    "pages": 3,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Brazil/Entertainment/Finance",
+    "start_page": 1591,
+    "end_page": 1591,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "France",
+    "start_page": 1592,
+    "end_page": 1593,
+    "pages": 2,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Hotels",
+    "start_page": 1594,
+    "end_page": 1594,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Island",
+    "start_page": 1595,
+    "end_page": 1595,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Israel/Italy",
+    "start_page": 1596,
+    "end_page": 1596,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "J E Biz Assoc?",
+    "start_page": 1597,
+    "end_page": 1609,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "71st St. NYC",
+    "start_page": 1610,
+    "end_page": 1610,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Kenya/Kinnerton",
+    "start_page": 1611,
+    "end_page": 1611,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Medical",
+    "start_page": 1612,
+    "end_page": 1612,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "PB",
+    "start_page": 1613,
+    "end_page": 1614,
+    "pages": 2,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Rugs/Security",
+    "start_page": 1615,
+    "end_page": 1615,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Switzerland/Travel",
+    "start_page": 1616,
+    "end_page": 1618,
+    "pages": 3,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Ranch/RM",
+    "start_page": 1619,
+    "end_page": 1620,
+    "pages": 2,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Who's Who Of Epstein's Black Book | spidercatweb.blog",
+    "start_page": 1621,
+    "end_page": 1652,
+    "pages": 32,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Jeffrey Epstein_ Complete FLIGHT LOGS of the Lolita Express and you should see the names! _ SocialMediaMorning.com",
+    "start_page": 1653,
+    "end_page": 1744,
+    "pages": 92,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Copyright",
+    "start_page": 1745,
+    "end_page": 1745,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Title Page",
+    "start_page": 1746,
+    "end_page": 1746,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Dedication",
+    "start_page": 1747,
+    "end_page": 1755,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Contents",
+    "start_page": 1756,
+    "end_page": 1756,
+    "pages": 1,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 1: ‘I’m thinking’ – Oh, but are you?",
+    "start_page": 1757,
+    "end_page": 1782,
+    "pages": 26,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 2: Renegade perception",
+    "start_page": 1783,
+    "end_page": 1817,
+    "pages": 35,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 3: The Pushbacker sting",
+    "start_page": 1818,
+    "end_page": 1840,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 4: ‘Covid’: The calculated catastrophe",
+    "start_page": 1841,
+    "end_page": 1875,
+    "pages": 35,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 5: There is no ‘virus’",
+    "start_page": 1876,
+    "end_page": 1902,
+    "pages": 27,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 6: Sequence of deceit",
+    "start_page": 1903,
+    "end_page": 1943,
+    "pages": 41,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 7: War on your mind",
+    "start_page": 1944,
+    "end_page": 1986,
+    "pages": 43,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 8: ‘Reframing’ insanity",
+    "start_page": 1987,
+    "end_page": 2028,
+    "pages": 42,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 9: We must have it? So what is it?",
+    "start_page": 2029,
+    "end_page": 2068,
+    "pages": 40,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 10: Human 2.0",
+    "start_page": 2069,
+    "end_page": 2092,
+    "pages": 24,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 11: Who controls the Cult?",
+    "start_page": 2093,
+    "end_page": 2141,
+    "pages": 49,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Chapter 12: Escaping Wetiko",
+    "start_page": 2142,
+    "end_page": 2179,
+    "pages": 38,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Postscript",
+    "start_page": 2180,
+    "end_page": 2198,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Appendix: Cowan-Kaufman-Morell Statement on Virus Isolation",
+    "start_page": 2199,
+    "end_page": 2203,
+    "pages": 5,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Bibliography",
+    "start_page": 2204,
+    "end_page": 2205,
+    "pages": 2,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "Index",
+    "start_page": 2206,
+    "end_page": 2257,
+    "pages": 52,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "94 - Neuromuscular Disorders",
+    "start_page": 2258,
+    "end_page": 2267,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "95 - Central Nervous System Infections",
+    "start_page": 2268,
+    "end_page": 2279,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "96 - Thought Disorders",
+    "start_page": 2280,
+    "end_page": 2286,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "97 - Mood Disorders",
+    "start_page": 2287,
+    "end_page": 2294,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "98 - Anxiety Disorders",
+    "start_page": 2295,
+    "end_page": 2302,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "99 - Somatic Symptoms and Related Disorders",
+    "start_page": 2303,
+    "end_page": 2305,
+    "pages": 3,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "100 -  Factitious Disorders and Malingering",
+    "start_page": 2306,
+    "end_page": 2313,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "101 - Suicidal Behavior",
+    "start_page": 2314,
+    "end_page": 2324,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "102 - Arthritis",
+    "start_page": 2325,
+    "end_page": 2343,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "103 - Tendinopathy and Bursitis",
+    "start_page": 2344,
+    "end_page": 2359,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "104 - Musculoskeletal Back Pain",
+    "start_page": 2360,
+    "end_page": 2367,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "105 - Systemic Lupus Erythematosus and the Vasculitides",
+    "start_page": 2368,
+    "end_page": 2383,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "106 -  Allergy, Anaphylaxis, and Angioedema",
+    "start_page": 2384,
+    "end_page": 2396,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "107 - Dermatologic Presentations",
+    "start_page": 2397,
+    "end_page": 2423,
+    "pages": 27,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "108 - Blood and Blood Components",
+    "start_page": 2424,
+    "end_page": 2435,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "109 - Anemia and Polycythemia",
+    "start_page": 2436,
+    "end_page": 2456,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "110 - White Blood Cell Disorders",
+    "start_page": 2457,
+    "end_page": 2463,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "111 - Disorders of Hemostasis",
+    "start_page": 2464,
+    "end_page": 2480,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "112 - Oncologic Emergencies",
+    "start_page": 2481,
+    "end_page": 2500,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "113 - Acid-­Base Disorders",
+    "start_page": 2501,
+    "end_page": 2512,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "114 - Electrolyte Disorders",
+    "start_page": 2513,
+    "end_page": 2532,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "115 -  Diabetes Mellitus and Disorders of Glucose Homeostasis",
+    "start_page": 2533,
+    "end_page": 2550,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "116 - Rhabdomyolysis",
+    "start_page": 2551,
+    "end_page": 2560,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "117 - Thyroid and Adrenal Disorders",
+    "start_page": 2561,
+    "end_page": 2581,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "118 -\rBacteria",
+    "start_page": 2582,
+    "end_page": 2609,
+    "pages": 28,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "119 - Viruses",
+    "start_page": 2610,
+    "end_page": 2636,
+    "pages": 27,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "120 - Coronaviruses",
+    "start_page": 2637,
+    "end_page": 2643,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "121 - HIV",
+    "start_page": 2644,
+    "end_page": 2658,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "122 - Parasites",
+    "start_page": 2659,
+    "end_page": 2678,
+    "pages": 20,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "123 - Tickborne Illnesses",
+    "start_page": 2679,
+    "end_page": 2706,
+    "pages": 28,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "124 - Tuberculosis",
+    "start_page": 2707,
+    "end_page": 2718,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "125 - Bone and Joint Infections",
+    "start_page": 2719,
+    "end_page": 2737,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "126 - Skin and Soft Tissue Infections",
+    "start_page": 2738,
+    "end_page": 2752,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "127 - Sepsis Syndrome",
+    "start_page": 2753,
+    "end_page": 2761,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "128 -\rHypothermia, Frostbite, and Nonfreezing Cold Injuries",
+    "start_page": 2762,
+    "end_page": 2784,
+    "pages": 23,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "129 -\rHeat Illness",
+    "start_page": 2785,
+    "end_page": 2796,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "130 - Electrical and Lightning Injuries",
+    "start_page": 2797,
+    "end_page": 2806,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "131 - Scuba Diving and Dysbarism",
+    "start_page": 2807,
+    "end_page": 2820,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "132 - High-­Altitude Medicine",
+    "start_page": 2821,
+    "end_page": 2838,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "133 - Drowning",
+    "start_page": 2839,
+    "end_page": 2844,
+    "pages": 6,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "134 - Radiation Injuries",
+    "start_page": 2845,
+    "end_page": 2854,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "135 - Care of the Poisoned Patient",
+    "start_page": 2855,
+    "end_page": 2866,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "136 - Toxic Alcohols",
+    "start_page": 2867,
+    "end_page": 2878,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "137 - Alcohol-­Related Disease",
+    "start_page": 2879,
+    "end_page": 2895,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "138 - Acetaminophen",
+    "start_page": 2896,
+    "end_page": 2904,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "139 - Aspirin and Nonsteroidal Agents",
+    "start_page": 2905,
+    "end_page": 2912,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "140 - Anticholinergics",
+    "start_page": 2913,
+    "end_page": 2917,
+    "pages": 5,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "141 - Antidepressants",
+    "start_page": 2918,
+    "end_page": 2928,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "142 - Cardiovascular Drugs",
+    "start_page": 2929,
+    "end_page": 2947,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "143 - Caustics",
+    "start_page": 2948,
+    "end_page": 2955,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "144 - Cocaine and Other Sympathomimetics",
+    "start_page": 2956,
+    "end_page": 2968,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "145 - THC and Hallucinogens",
+    "start_page": 2969,
+    "end_page": 2980,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "146 - Iron and Heavy Metals",
+    "start_page": 2981,
+    "end_page": 2990,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "147 - Hydrocarbons",
+    "start_page": 2991,
+    "end_page": 2996,
+    "pages": 6,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "148 - Inhaled Toxins",
+    "start_page": 2997,
+    "end_page": 3007,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "149 - Lithium",
+    "start_page": 3008,
+    "end_page": 3010,
+    "pages": 3,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "150 - Antipsychotics",
+    "start_page": 3011,
+    "end_page": 3019,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "151 - Opioids",
+    "start_page": 3020,
+    "end_page": 3026,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "152 - Pesticides",
+    "start_page": 3027,
+    "end_page": 3039,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "153 - Plants, Herbal Medications, and Mushrooms",
+    "start_page": 3040,
+    "end_page": 3055,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "154 - Sedative-­Hypnotics",
+    "start_page": 3056,
+    "end_page": 3064,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "155 - Care of the Pediatric Patient",
+    "start_page": 3065,
+    "end_page": 3074,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "156 - Pediatric Airway Management",
+    "start_page": 3075,
+    "end_page": 3087,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "157 -\rPediatric Sedation and Analgesia",
+    "start_page": 3088,
+    "end_page": 3104,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "158 - Pediatric Resuscitation",
+    "start_page": 3105,
+    "end_page": 3120,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "159 - Neonatal Resuscitation",
+    "start_page": 3121,
+    "end_page": 3133,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "160 - Pediatric Trauma",
+    "start_page": 3134,
+    "end_page": 3150,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "161 - Pediatric Fever",
+    "start_page": 3151,
+    "end_page": 3163,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "162 - Pediatric Upper Airway Obstruction and Infections",
+    "start_page": 3164,
+    "end_page": 3178,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "163 - Pediatric Lower Airway Obstruction",
+    "start_page": 3179,
+    "end_page": 3187,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "164 - Pediatric Lung Disease",
+    "start_page": 3188,
+    "end_page": 3199,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "165 - Pediatric Cardiac Disorders",
+    "start_page": 3200,
+    "end_page": 3224,
+    "pages": 25,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "166 - Pediatric Gastrointestinal Disorders",
+    "start_page": 3225,
+    "end_page": 3243,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "167 - Pediatric Infectious Diarrheal Disease and Dehydration",
+    "start_page": 3244,
+    "end_page": 3264,
+    "pages": 21,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "168 - Pediatric Genitourinary and Renal Tract Disorders",
+    "start_page": 3265,
+    "end_page": 3282,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "169 - Pediatric Neurologic Disorders",
+    "start_page": 3283,
+    "end_page": 3300,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "170 - Pediatric Musculoskeletal Disorders",
+    "start_page": 3301,
+    "end_page": 3319,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "171 - Pediatric Drug Therapy",
+    "start_page": 3320,
+    "end_page": 3330,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "172 - Child Abuse",
+    "start_page": 3331,
+    "end_page": 3346,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "173 - Complications of Pregnancy",
+    "start_page": 3347,
+    "end_page": 3371,
+    "pages": 25,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "174 -  Medical Emergencies During Pregnancy",
+    "start_page": 3372,
+    "end_page": 3387,
+    "pages": 16,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "175 - Drug Therapy in Pregnancy",
+    "start_page": 3388,
+    "end_page": 3406,
+    "pages": 19,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "176 - Labor and Delivery",
+    "start_page": 3407,
+    "end_page": 3423,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "177 - Trauma in Pregnancy",
+    "start_page": 3424,
+    "end_page": 3434,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "178 - Care of the Geriatric Patient",
+    "start_page": 3435,
+    "end_page": 3442,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "179 - Geriatric Trauma",
+    "start_page": 3443,
+    "end_page": 3450,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "180 - Geriatric Drug Therapy",
+    "start_page": 3451,
+    "end_page": 3460,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "181 - Geriatric Abuse and Neglect",
+    "start_page": 3461,
+    "end_page": 3470,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "182 - The Immunocompromised Patient",
+    "start_page": 3471,
+    "end_page": 3485,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "183 - The Solid Organ Transplant Patient",
+    "start_page": 3486,
+    "end_page": 3500,
+    "pages": 15,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "184 - The Morbidly Obese Patient",
+    "start_page": 3501,
+    "end_page": 3508,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "185 - The Combative and Difficult Patient*",
+    "start_page": 3509,
+    "end_page": 3522,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "186 - Multiculturalism, Diversity, and Care Delivery",
+    "start_page": 3523,
+    "end_page": 3530,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "187 - Human Trafficking",
+    "start_page": 3531,
+    "end_page": 3541,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "188 - Sexual Minority Populations (LGBTQ)",
+    "start_page": 3542,
+    "end_page": 3552,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "189 - Social Determinants",
+    "start_page": 3553,
+    "end_page": 3561,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "190 - Community Violence",
+    "start_page": 3562,
+    "end_page": 3568,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "191 - Sexual Assault",
+    "start_page": 3569,
+    "end_page": 3586,
+    "pages": 18,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "192 - Intimate Partner Violence and Abuse",
+    "start_page": 3587,
+    "end_page": 3596,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e1 - Global Emergency Medicine",
+    "start_page": 3597,
+    "end_page": 3606,
+    "pages": 10,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e2 - Humanitarian Aid in Disaster and Conflict",
+    "start_page": 3607,
+    "end_page": 3615,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e3 - Emergency Ultrasound",
+    "start_page": 3616,
+    "end_page": 3632,
+    "pages": 17,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e4 - The Geriatric Emergency Department",
+    "start_page": 3633,
+    "end_page": 3640,
+    "pages": 8,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e5 - End of Life",
+    "start_page": 3641,
+    "end_page": 3651,
+    "pages": 11,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e6 - Bioethics",
+    "start_page": 3652,
+    "end_page": 3665,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e7 - Emergency Medical Treatment and Labor Act and Medicolegal Issues",
+    "start_page": 3666,
+    "end_page": 3678,
+    "pages": 13,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e8 - Quality Improvement and Patient Safety",
+    "start_page": 3679,
+    "end_page": 3687,
+    "pages": 9,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e9 - Patient Experience in the Emergency Department",
+    "start_page": 3688,
+    "end_page": 3690,
+    "pages": 3,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e10 - Wellness, Stress, and the Impaired Physician",
+    "start_page": 3691,
+    "end_page": 3696,
+    "pages": 6,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e11 - Forensic Emergency Medicine",
+    "start_page": 3697,
+    "end_page": 3718,
+    "pages": 22,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e12 - Emergency Medical Services: Overview and Ground Transport",
+    "start_page": 3719,
+    "end_page": 3730,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e13 - Air Medical Transport",
+    "start_page": 3731,
+    "end_page": 3742,
+    "pages": 12,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e14 - Disaster Preparedness",
+    "start_page": 3743,
+    "end_page": 3756,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e15 - Weapons of Mass Destruction",
+    "start_page": 3757,
+    "end_page": 3770,
+    "pages": 14,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  },
+  {
+    "title": "e16 - Tactical Emergency Medical Support and Urban Search and Rescue",
+    "start_page": 3771,
+    "end_page": 3777,
+    "pages": 7,
+    "confidence": 0.9,
+    "method": "bookmarks"
+  }
+]

@@ -1,0 +1,257 @@
+title,start_page,end_page,pages,confidence,method
+Cover,1,1,1,0.9,bookmarks
+"ROSEN’S Emergency MedicineConcepts and Clinical Practice",2,2,1,0.9,bookmarks
+Copyright,3,3,1,0.9,bookmarks
+Acknowledgments,4,4,1,0.9,bookmarks
+Contributors,5,17,13,0.9,bookmarks
+Preface to the Tenth Edition,18,18,1,0.9,bookmarks
+Preface to the Ninth Edition,19,19,1,0.9,bookmarks
+How This Medical Textbook Should Be Viewed by the Practicing Clinician and Judicial System,20,20,1,0.9,bookmarks
+1 - Airway,21,45,25,0.9,bookmarks
+2 - Mechanical Ventilation and Noninvasive Ventilatory Support,46,56,11,0.9,bookmarks
+3 - Shock,57,65,9,0.9,bookmarks
+4 - Brain Resuscitation,66,76,11,0.9,bookmarks
+5 - Adult Resuscitation,77,90,14,0.9,bookmarks
+6 - Pain Management,91,110,20,0.9,bookmarks
+7 - Procedural Sedation and Analgesia,111,121,11,0.9,bookmarks
+8 - Fever in the Adult Patient,122,128,7,0.9,bookmarks
+9 - Weakness,129,135,7,0.9,bookmarks
+10 - Cyanosis,136,144,9,0.9,bookmarks
+11 - Syncope,145,153,9,0.9,bookmarks
+12 - Depressed Consciousness and Coma,154,163,10,0.9,bookmarks
+13 - Confusion,164,170,7,0.9,bookmarks
+14 - Seizures,171,184,14,0.9,bookmarks
+15 - Dizziness and Vertigo,185,194,10,0.9,bookmarks
+16 - Headache,195,202,8,0.9,bookmarks
+17 - Diplopia,203,212,10,0.9,bookmarks
+18 - Red and Painful Eye,213,230,18,0.9,bookmarks
+19 - Sore Throat,231,238,8,0.9,bookmarks
+20 - Hemoptysis,239,246,8,0.9,bookmarks
+21 - Dyspnea,247,255,9,0.9,bookmarks
+22 - Chest Pain,256,266,11,0.9,bookmarks
+"23 -Abdominal Pain",267,277,11,0.9,bookmarks
+24 - Jaundice,278,284,7,0.9,bookmarks
+25 - Nausea and Vomiting,285,299,15,0.9,bookmarks
+26 - Gastrointestinal Bleeding,300,306,7,0.9,bookmarks
+27 - Diarrhea,307,315,9,0.9,bookmarks
+28 - Constipation,316,322,7,0.9,bookmarks
+29 - Acute Pelvic Pain,323,330,8,0.9,bookmarks
+30 - Vaginal Bleeding,331,337,7,0.9,bookmarks
+31 - Back Pain,338,349,12,0.9,bookmarks
+32 - Multiple Trauma,350,366,17,0.9,bookmarks
+33 - Head Trauma,367,400,34,0.9,bookmarks
+34 - Facial Trauma,401,419,19,0.9,bookmarks
+"35 - Spinal Trauma",420,449,30,0.9,bookmarks
+36 - Neck Trauma,450,461,12,0.9,bookmarks
+37 - Thoracic Trauma,462,484,23,0.9,bookmarks
+38 - Abdominal Trauma,485,500,16,0.9,bookmarks
+39 - Genitourinary Trauma,501,520,20,0.9,bookmarks
+40 - Peripheral Vascular Trauma,521,532,12,0.9,bookmarks
+41 - General Principles of Orthopedic Injuries,533,553,21,0.9,bookmarks
+42 - Hand Injuries,554,597,44,0.9,bookmarks
+43 - Wrist and Forearm Injuries,598,621,24,0.9,bookmarks
+44 - Humerus and Elbow Injuries,622,642,21,0.9,bookmarks
+45 - Shoulder Injuries,643,664,22,0.9,bookmarks
+46 - Pelvic Injuries,665,684,20,0.9,bookmarks
+47 - Femur and Hip Injuries,685,708,24,0.9,bookmarks
+48 - Knee and Lower Leg Injuries,709,731,23,0.9,bookmarks
+49 - Ankle and Foot Injuries,732,762,31,0.9,bookmarks
+50 - Wound Management Principles,763,779,17,0.9,bookmarks
+51 - Foreign Bodies,780,797,18,0.9,bookmarks
+52 - Mammalian Bites,798,808,11,0.9,bookmarks
+53 - Venomous Animal Injuries,809,829,21,0.9,bookmarks
+54 - Thermal Injuries,830,841,12,0.9,bookmarks
+55 - Chemical Injuries,842,856,15,0.9,bookmarks
+56 - Oral Medicine,857,877,21,0.9,bookmarks
+57 - Ophthalmology,878,911,34,0.9,bookmarks
+58 - Otolaryngology,912,926,15,0.9,bookmarks
+59 - Asthma,927,941,15,0.9,bookmarks
+60 - Chronic Obstructive Pulmonary Disease,942,954,13,0.9,bookmarks
+61 - Upper Respiratory Tract Infections,955,969,15,0.9,bookmarks
+62 - Pneumonia,970,981,12,0.9,bookmarks
+63 - Pleural Disease,982,992,11,0.9,bookmarks
+64 - Acute Coronary Syndromes,993,1037,45,0.9,bookmarks
+65 - Dysrhythmias,1038,1069,32,0.9,bookmarks
+66 - Implantable Cardiac Devices,1070,1086,17,0.9,bookmarks
+67 - Heart Failure,1087,1112,26,0.9,bookmarks
+68 - Pericardial and Myocardial Disease,1113,1128,16,0.9,bookmarks
+69 - Infective Endocarditis and Valvular Heart Disease,1129,1138,10,0.9,bookmarks
+70 - Hypertension,1139,1155,17,0.9,bookmarks
+71 - Aortic Dissection,1156,1164,9,0.9,bookmarks
+72 - Abdominal Aortic Aneurysm,1165,1175,11,0.9,bookmarks
+73 - Peripheral Arteriovascular Disease,1176,1193,18,0.9,bookmarks
+74 - Pulmonary Embolism and Deep Vein Thrombosis,1194,1216,23,0.9,bookmarks
+"75 - Esophagus, Stomach, and Duodenum",1217,1234,18,0.9,bookmarks
+76 - Liver and Biliary Tract Disorders,1235,1264,30,0.9,bookmarks
+77 - Pancreas,1265,1275,11,0.9,bookmarks
+78 - Small Intestine,1276,1288,13,0.9,bookmarks
+79 - Acute Appendicitis,1289,1299,11,0.9,bookmarks
+80 - Gastroenteritis,1300,1320,21,0.9,bookmarks
+81 - Large Intestine,1321,1341,21,0.9,bookmarks
+82 - Anorectum,1342,1354,13,0.9,bookmarks
+83 - Renal Failure,1355,1374,20,0.9,bookmarks
+84 -  Sexually Transmitted Infections,1375,1388,14,0.9,bookmarks
+85 - Urologic Disorders,1389,1413,25,0.9,bookmarks
+86 - Gynecologic Disorders,1414,1423,10,0.9,bookmarks
+87 - Stroke,1424,1446,23,0.9,bookmarks
+88 - Seizure,1447,1460,14,0.9,bookmarks
+89 - Headache Disorders,1461,1476,16,0.9,bookmarks
+90 - Delirium and Dementia,1477,1490,14,0.9,bookmarks
+91 - Brain and Cranial Nerve Disorders,1491,1502,12,0.9,bookmarks
+92 - Spinal Cord Disorders,1503,1514,12,0.9,bookmarks
+93 - Peripheral Nerve Disorders,1515,1526,12,0.9,bookmarks
+Contents,1527,1527,1,0.9,bookmarks
+Introduction,1528,1528,1,0.9,bookmarks
+Epstein's Black Book Unredacted!,1529,1586,58,0.9,bookmarks
+65th St NYC,1587,1587,1,0.9,bookmarks
+America,1588,1590,3,0.9,bookmarks
+Brazil/Entertainment/Finance,1591,1591,1,0.9,bookmarks
+France,1592,1593,2,0.9,bookmarks
+Hotels,1594,1594,1,0.9,bookmarks
+Island,1595,1595,1,0.9,bookmarks
+Israel/Italy,1596,1596,1,0.9,bookmarks
+J E Biz Assoc?,1597,1609,13,0.9,bookmarks
+71st St. NYC,1610,1610,1,0.9,bookmarks
+Kenya/Kinnerton,1611,1611,1,0.9,bookmarks
+Medical,1612,1612,1,0.9,bookmarks
+PB,1613,1614,2,0.9,bookmarks
+Rugs/Security,1615,1615,1,0.9,bookmarks
+Switzerland/Travel,1616,1618,3,0.9,bookmarks
+Ranch/RM,1619,1620,2,0.9,bookmarks
+Who's Who Of Epstein's Black Book | spidercatweb.blog,1621,1652,32,0.9,bookmarks
+Jeffrey Epstein_ Complete FLIGHT LOGS of the Lolita Express and you should see the names! _ SocialMediaMorning.com,1653,1744,92,0.9,bookmarks
+Copyright,1745,1745,1,0.9,bookmarks
+Title Page,1746,1746,1,0.9,bookmarks
+Dedication,1747,1755,9,0.9,bookmarks
+Contents,1756,1756,1,0.9,bookmarks
+"Chapter 1: ‘I’m thinking’ – Oh, but are you?",1757,1782,26,0.9,bookmarks
+Chapter 2: Renegade perception,1783,1817,35,0.9,bookmarks
+Chapter 3: The Pushbacker sting,1818,1840,23,0.9,bookmarks
+Chapter 4: ‘Covid’: The calculated catastrophe,1841,1875,35,0.9,bookmarks
+Chapter 5: There is no ‘virus’,1876,1902,27,0.9,bookmarks
+Chapter 6: Sequence of deceit,1903,1943,41,0.9,bookmarks
+Chapter 7: War on your mind,1944,1986,43,0.9,bookmarks
+Chapter 8: ‘Reframing’ insanity,1987,2028,42,0.9,bookmarks
+Chapter 9: We must have it? So what is it?,2029,2068,40,0.9,bookmarks
+Chapter 10: Human 2.0,2069,2092,24,0.9,bookmarks
+Chapter 11: Who controls the Cult?,2093,2141,49,0.9,bookmarks
+Chapter 12: Escaping Wetiko,2142,2179,38,0.9,bookmarks
+Postscript,2180,2198,19,0.9,bookmarks
+Appendix: Cowan-Kaufman-Morell Statement on Virus Isolation,2199,2203,5,0.9,bookmarks
+Bibliography,2204,2205,2,0.9,bookmarks
+Index,2206,2257,52,0.9,bookmarks
+94 - Neuromuscular Disorders,2258,2267,10,0.9,bookmarks
+95 - Central Nervous System Infections,2268,2279,12,0.9,bookmarks
+96 - Thought Disorders,2280,2286,7,0.9,bookmarks
+97 - Mood Disorders,2287,2294,8,0.9,bookmarks
+98 - Anxiety Disorders,2295,2302,8,0.9,bookmarks
+99 - Somatic Symptoms and Related Disorders,2303,2305,3,0.9,bookmarks
+100 -  Factitious Disorders and Malingering,2306,2313,8,0.9,bookmarks
+101 - Suicidal Behavior,2314,2324,11,0.9,bookmarks
+102 - Arthritis,2325,2343,19,0.9,bookmarks
+103 - Tendinopathy and Bursitis,2344,2359,16,0.9,bookmarks
+104 - Musculoskeletal Back Pain,2360,2367,8,0.9,bookmarks
+105 - Systemic Lupus Erythematosus and the Vasculitides,2368,2383,16,0.9,bookmarks
+"106 -  Allergy, Anaphylaxis, and Angioedema",2384,2396,13,0.9,bookmarks
+107 - Dermatologic Presentations,2397,2423,27,0.9,bookmarks
+108 - Blood and Blood Components,2424,2435,12,0.9,bookmarks
+109 - Anemia and Polycythemia,2436,2456,21,0.9,bookmarks
+110 - White Blood Cell Disorders,2457,2463,7,0.9,bookmarks
+111 - Disorders of Hemostasis,2464,2480,17,0.9,bookmarks
+112 - Oncologic Emergencies,2481,2500,20,0.9,bookmarks
+113 - Acid-­Base Disorders,2501,2512,12,0.9,bookmarks
+114 - Electrolyte Disorders,2513,2532,20,0.9,bookmarks
+115 -  Diabetes Mellitus and Disorders of Glucose Homeostasis,2533,2550,18,0.9,bookmarks
+116 - Rhabdomyolysis,2551,2560,10,0.9,bookmarks
+117 - Thyroid and Adrenal Disorders,2561,2581,21,0.9,bookmarks
+"118 -Bacteria",2582,2609,28,0.9,bookmarks
+119 - Viruses,2610,2636,27,0.9,bookmarks
+120 - Coronaviruses,2637,2643,7,0.9,bookmarks
+121 - HIV,2644,2658,15,0.9,bookmarks
+122 - Parasites,2659,2678,20,0.9,bookmarks
+123 - Tickborne Illnesses,2679,2706,28,0.9,bookmarks
+124 - Tuberculosis,2707,2718,12,0.9,bookmarks
+125 - Bone and Joint Infections,2719,2737,19,0.9,bookmarks
+126 - Skin and Soft Tissue Infections,2738,2752,15,0.9,bookmarks
+127 - Sepsis Syndrome,2753,2761,9,0.9,bookmarks
+"128 -Hypothermia, Frostbite, and Nonfreezing Cold Injuries",2762,2784,23,0.9,bookmarks
+"129 -Heat Illness",2785,2796,12,0.9,bookmarks
+130 - Electrical and Lightning Injuries,2797,2806,10,0.9,bookmarks
+131 - Scuba Diving and Dysbarism,2807,2820,14,0.9,bookmarks
+132 - High-­Altitude Medicine,2821,2838,18,0.9,bookmarks
+133 - Drowning,2839,2844,6,0.9,bookmarks
+134 - Radiation Injuries,2845,2854,10,0.9,bookmarks
+135 - Care of the Poisoned Patient,2855,2866,12,0.9,bookmarks
+136 - Toxic Alcohols,2867,2878,12,0.9,bookmarks
+137 - Alcohol-­Related Disease,2879,2895,17,0.9,bookmarks
+138 - Acetaminophen,2896,2904,9,0.9,bookmarks
+139 - Aspirin and Nonsteroidal Agents,2905,2912,8,0.9,bookmarks
+140 - Anticholinergics,2913,2917,5,0.9,bookmarks
+141 - Antidepressants,2918,2928,11,0.9,bookmarks
+142 - Cardiovascular Drugs,2929,2947,19,0.9,bookmarks
+143 - Caustics,2948,2955,8,0.9,bookmarks
+144 - Cocaine and Other Sympathomimetics,2956,2968,13,0.9,bookmarks
+145 - THC and Hallucinogens,2969,2980,12,0.9,bookmarks
+146 - Iron and Heavy Metals,2981,2990,10,0.9,bookmarks
+147 - Hydrocarbons,2991,2996,6,0.9,bookmarks
+148 - Inhaled Toxins,2997,3007,11,0.9,bookmarks
+149 - Lithium,3008,3010,3,0.9,bookmarks
+150 - Antipsychotics,3011,3019,9,0.9,bookmarks
+151 - Opioids,3020,3026,7,0.9,bookmarks
+152 - Pesticides,3027,3039,13,0.9,bookmarks
+"153 - Plants, Herbal Medications, and Mushrooms",3040,3055,16,0.9,bookmarks
+154 - Sedative-­Hypnotics,3056,3064,9,0.9,bookmarks
+155 - Care of the Pediatric Patient,3065,3074,10,0.9,bookmarks
+156 - Pediatric Airway Management,3075,3087,13,0.9,bookmarks
+"157 -Pediatric Sedation and Analgesia",3088,3104,17,0.9,bookmarks
+158 - Pediatric Resuscitation,3105,3120,16,0.9,bookmarks
+159 - Neonatal Resuscitation,3121,3133,13,0.9,bookmarks
+160 - Pediatric Trauma,3134,3150,17,0.9,bookmarks
+161 - Pediatric Fever,3151,3163,13,0.9,bookmarks
+162 - Pediatric Upper Airway Obstruction and Infections,3164,3178,15,0.9,bookmarks
+163 - Pediatric Lower Airway Obstruction,3179,3187,9,0.9,bookmarks
+164 - Pediatric Lung Disease,3188,3199,12,0.9,bookmarks
+165 - Pediatric Cardiac Disorders,3200,3224,25,0.9,bookmarks
+166 - Pediatric Gastrointestinal Disorders,3225,3243,19,0.9,bookmarks
+167 - Pediatric Infectious Diarrheal Disease and Dehydration,3244,3264,21,0.9,bookmarks
+168 - Pediatric Genitourinary and Renal Tract Disorders,3265,3282,18,0.9,bookmarks
+169 - Pediatric Neurologic Disorders,3283,3300,18,0.9,bookmarks
+170 - Pediatric Musculoskeletal Disorders,3301,3319,19,0.9,bookmarks
+171 - Pediatric Drug Therapy,3320,3330,11,0.9,bookmarks
+172 - Child Abuse,3331,3346,16,0.9,bookmarks
+173 - Complications of Pregnancy,3347,3371,25,0.9,bookmarks
+174 -  Medical Emergencies During Pregnancy,3372,3387,16,0.9,bookmarks
+175 - Drug Therapy in Pregnancy,3388,3406,19,0.9,bookmarks
+176 - Labor and Delivery,3407,3423,17,0.9,bookmarks
+177 - Trauma in Pregnancy,3424,3434,11,0.9,bookmarks
+178 - Care of the Geriatric Patient,3435,3442,8,0.9,bookmarks
+179 - Geriatric Trauma,3443,3450,8,0.9,bookmarks
+180 - Geriatric Drug Therapy,3451,3460,10,0.9,bookmarks
+181 - Geriatric Abuse and Neglect,3461,3470,10,0.9,bookmarks
+182 - The Immunocompromised Patient,3471,3485,15,0.9,bookmarks
+183 - The Solid Organ Transplant Patient,3486,3500,15,0.9,bookmarks
+184 - The Morbidly Obese Patient,3501,3508,8,0.9,bookmarks
+185 - The Combative and Difficult Patient*,3509,3522,14,0.9,bookmarks
+"186 - Multiculturalism, Diversity, and Care Delivery",3523,3530,8,0.9,bookmarks
+187 - Human Trafficking,3531,3541,11,0.9,bookmarks
+188 - Sexual Minority Populations (LGBTQ),3542,3552,11,0.9,bookmarks
+189 - Social Determinants,3553,3561,9,0.9,bookmarks
+190 - Community Violence,3562,3568,7,0.9,bookmarks
+191 - Sexual Assault,3569,3586,18,0.9,bookmarks
+192 - Intimate Partner Violence and Abuse,3587,3596,10,0.9,bookmarks
+e1 - Global Emergency Medicine,3597,3606,10,0.9,bookmarks
+e2 - Humanitarian Aid in Disaster and Conflict,3607,3615,9,0.9,bookmarks
+e3 - Emergency Ultrasound,3616,3632,17,0.9,bookmarks
+e4 - The Geriatric Emergency Department,3633,3640,8,0.9,bookmarks
+e5 - End of Life,3641,3651,11,0.9,bookmarks
+e6 - Bioethics,3652,3665,14,0.9,bookmarks
+e7 - Emergency Medical Treatment and Labor Act and Medicolegal Issues,3666,3678,13,0.9,bookmarks
+e8 - Quality Improvement and Patient Safety,3679,3687,9,0.9,bookmarks
+e9 - Patient Experience in the Emergency Department,3688,3690,3,0.9,bookmarks
+"e10 - Wellness, Stress, and the Impaired Physician",3691,3696,6,0.9,bookmarks
+e11 - Forensic Emergency Medicine,3697,3718,22,0.9,bookmarks
+e12 - Emergency Medical Services: Overview and Ground Transport,3719,3730,12,0.9,bookmarks
+e13 - Air Medical Transport,3731,3742,12,0.9,bookmarks
+e14 - Disaster Preparedness,3743,3756,14,0.9,bookmarks
+e15 - Weapons of Mass Destruction,3757,3770,14,0.9,bookmarks
+e16 - Tactical Emergency Medical Support and Urban Search and Rescue,3771,3777,7,0.9,bookmarks
