@@ -30,8 +30,14 @@ class SentenceTransformerEmbedder:
             local_files_only=local_only,
             device="cpu",
             trust_remote_code=False,
+            model_kwargs={"use_safetensors": True},
         )
-        dimension = self._model.get_sentence_embedding_dimension()
+        get_dimension = getattr(self._model, "get_embedding_dimension", None)
+        dimension = (
+            get_dimension()
+            if get_dimension is not None
+            else self._model.get_sentence_embedding_dimension()
+        )
         if not isinstance(dimension, int) or dimension < 1:
             raise ValueError("Embedding model has no supported output dimension")
         self._dimension = dimension
