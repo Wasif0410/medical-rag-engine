@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "medical-rag-engine"
+version = "0.2.0"
+description = "Chapter-aware medical textbook ingestion and cited semantic retrieval"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+authors = [{name = "Wasif Saeed"}]
+dependencies = ["numpy>=2.0,<3", "pymupdf>=1.26,<2"]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=5.1,<6", "faiss-cpu>=1.12,<2"]
+api = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1"]
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "pytest-cov>=6,<8", "ruff>=0.12,<1", "httpx>=0.28,<1", "build>=1.2,<2", "pip-audit>=2.9,<3"]
+
+[project.scripts]
+medical-rag = "medical_rag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/medical_rag"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["integration: requires locally available embedding model and semantic extra"]
