@@ -1,0 +1,89 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests (${{ matrix.os }}, Python ${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: '0.12.5'
+          enable-cache: true
+      - run: uv sync --locked --extra api
+      - run: uv run --locked --extra api ruff check src tests examples
+      - run: uv run --locked --extra api ruff format --check src tests examples
+      - run: uv run --locked --extra api pytest -m "not integration" --cov=medical_rag --cov-fail-under=85
+      - run: uv build
+
+  semantic:
+    name: Real model and dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: '0.12.5'
+          enable-cache: true
+      - run: uv sync --locked --extra api --extra semantic
+      - run: uv run --locked --extra api --extra semantic pytest -m integration
+        env:
+          MEDICAL_RAG_RUN_INTEGRATION: 'true'
+      - name: Audit pinned runtime dependencies (normalize CPU wheel version)
+        run: |
+          uv export --locked --all-extras --no-dev --no-hashes --no-emit-project > /tmp/dependencies.txt
+          sed -i 's/+cpu//' /tmp/dependencies.txt
+          uv run --locked --extra api --extra semantic pip-audit --disable-pip --no-deps -r /tmp/dependencies.txt
+
+  container:
+    name: Container smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: docker build -t medical-rag-engine:ci .
+      - name: Ingest synthetic PDF and serve with offline model
+        run: |
+          docker volume create test-corpus
+          docker run --rm -v test-corpus:/data medical-rag-engine:ci python /app/examples/create_sample_pdf.py --output /data/sample.pdf
+          docker run --rm -v test-corpus:/data medical-rag-engine:ci medical-rag ingest /data/sample.pdf --id sample --title Sample
+          docker run --rm -v test-corpus:/data medical-rag-engine:ci medical-rag index
+          docker run -d --name rag-api --read-only --tmpfs /tmp --cap-drop ALL --security-opt no-new-privileges -v test-corpus:/data -p 127.0.0.1:8000:8000 -e MEDICAL_RAG_API_KEY=ci-key-with-at-least-32-characters medical-rag-engine:ci
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://127.0.0.1:8000/readyz; then break; fi
+            sleep 2
+          done
+          curl --fail http://127.0.0.1:8000/readyz
+          curl --fail -H 'X-API-Key: ci-key-with-at-least-32-characters' -H 'Content-Type: application/json' -d '{"query":"burn wound","top_k":1}' http://127.0.0.1:8000/v1/search > /tmp/result.json
+          python -c "import json; r=json.load(open('/tmp/result.json')); assert r['results'][0]['page']==3"
+      - name: Container diagnostics
+        if: failure()
+        run: docker logs rag-api || true
+      - name: Cleanup
+        if: always()
+        run: |
+          docker rm -f rag-api || true
+          docker volume rm test-corpus || true

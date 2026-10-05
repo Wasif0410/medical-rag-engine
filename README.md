@@ -1,445 +1,128 @@
-# RAG Agent System - Complete Technical Documentation
+# Medical RAG Engine
 
-## System Overview
+[![CI](https://github.com/Wasif0410/medical-rag-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/Wasif0410/medical-rag-engine/actions/workflows/ci.yml)
 
-The RAG Agent is a sophisticated textbook search and retrieval system that processes multiple PDF textbooks, extracts chapters intelligently, creates searchable chunks, and provides semantic search capabilities. The system is designed for production use with scalability, caching, and multi-textbook support.
+Chapter-aware ingestion and cited semantic retrieval for medical textbooks. Turn text-based PDFs into a searchable corpus, retrieve relevant passages, and preserve the textbook, chapter, and physical PDF page behind every result.
 
-## 🏗️ **High-Level Architecture**
+The engine provides the retrieval layer for RAG applications. It returns source passages rather than generated answers. It has no LLM provider credentials or clinical decision-making features.
 
-```
-┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
-│  Chapter Detection  │    │  Text Processing    │    │   Vector Search     │
-│     System          │───▶│     Pipeline        │───▶│     Engine          │
-└─────────────────────┘    └─────────────────────┘    └─────────────────────┘
-         │                           │                           │
-         ▼                           ▼                           ▼
-    CSV Chapter Map            Document Chunks              FAISS Index
-    (page boundaries)         (800 char chunks)           (384D vectors)
-```
+## What it does
 
-## 📁 **Directory Structure Breakdown**
+- Detects chapters from bookmarks or explicit headings; accepts reviewed chapter CSVs.
+- Creates overlapping chunks within each PDF page for exact page citations.
+- Stores textbooks and passages in SQLite with transactional replacement and deletion.
+- Uses a pinned Sentence Transformers model and FAISS for cosine similarity search.
+- Filters textbooks before ranking, and invalidates cached vectors when the corpus changes.
+- Exposes a JSON CLI and an authenticated, read-only FastAPI service.
+- Includes a lockfile, regression tests, real-model integration test, CI, and a non-root Docker image.
 
-### Root Directory (`RAG AGENT/`)
+## Quickstart
 
-```
-RAG AGENT/
-├── key.json                     # API keys and credentials
-├── pinecone-migration.md        # Migration documentation
-├── chapter_detection_system/    # Chapter boundary detection
-├── data_files/                  # Source PDF files
-└── multi_textbook_search/       # Main search system
-```
+Requires Python 3.11–3.13 and [uv](https://docs.astral.sh/uv/getting-started/installation/). Run these commands from the repository root:
 
----
-
-## 🔍 **Chapter Detection System**
-
-**Location**: `chapter_detection_system/`
-
-### Purpose
-
-Automatically detects chapter boundaries in PDF files using multiple intelligent methods.
-
-### Key Files
-
-#### `chapter_detector.py` (376 lines)
-
-**Core chapter detection engine with fallback methods**
-
-```python
-class ChapterDetector:
-    # Method 1: Extract PDF bookmarks (highest accuracy)
-    def _extract_bookmarks() -> List[Chapter]
-
-    # Method 2: Parse Table of Contents pages
-    def _parse_toc() -> List[Chapter]
-
-    # Method 3: Detect heading patterns in text
-    def _detect_headings() -> List[Chapter]
-
-    # Method 4: Font-based analysis
-    def _analyze_fonts() -> List[Chapter]
+```sh
+git clone https://github.com/Wasif0410/medical-rag-engine.git
+cd medical-rag-engine
+uv sync --locked --all-extras
+uv run --all-extras python examples/create_sample_pdf.py
+uv run --all-extras medical-rag ingest data/sample.pdf --id sample --title "Synthetic Clinical Textbook"
+uv run --all-extras medical-rag index
+uv run --all-extras medical-rag search "burn wound assessment" --top-k 3
 ```
 
-**Detection Methods (in priority order):**
+The sample PDF is synthetic material for software testing. The first `index` or `search` downloads the pinned embedding model; ingestion alone needs no model or network access. Linux and Windows use CPU-only PyTorch wheels through uv.
 
-1. **PDF Bookmarks** - Extracts built-in PDF navigation structure
-2. **Table of Contents** - Parses ToC pages for chapter listings
-3. **Heading Detection** - Uses regex patterns to find chapter headers
-4. **Font Analysis** - Identifies chapters by font size/weight changes
+Search results are JSON objects containing `content`, `score`, `textbook_id`, `textbook_title`, `chapter`, `page`, `citation`, and `chunk_id`. The score is cosine similarity, not a probability or a measure of clinical correctness.
 
-**Output**: CSV file with columns: `title, start_page, end_page, pages, confidence, method`
+### Ingest your own textbook
 
-#### `run.py`
+Use a PDF you have permission to process. Review detected chapters before ingestion when the PDF has unreliable bookmarks:
 
-**Simple execution script for chapter detection**
-
-- Takes PDF path as input
-- Runs detection algorithm
-- Saves results to CSV in `output/` directory
-
-#### `settings.py`
-
-**Configuration parameters for detection algorithms**
-
-- Font size thresholds
-- Regex patterns for chapter detection
-- ToC keyword lists
-- Confidence scoring parameters
-
-### How Chapter Detection Works
-
-```mermaid
-flowchart TD
-    A[PDF Input] --> B[Try Bookmarks]
-    B --> C{Bookmarks Found?}
-    C -->|Yes| D[Extract Chapter Structure]
-    C -->|No| E[Try Table of Contents]
-    E --> F{ToC Found?}
-    F -->|Yes| D
-    F -->|No| G[Try Heading Detection]
-    G --> H{Headers Found?}
-    H -->|Yes| D
-    H -->|No| I[Font Analysis]
-    I --> D
-    D --> J[Save CSV Output]
+```sh
+uv run --all-extras medical-rag detect path/to/book.pdf --output data/chapters.csv
+uv run --all-extras medical-rag ingest path/to/book.pdf --id book-v1 --title "Textbook Title" --edition "2nd edition" --chapters data/chapters.csv
+uv run --all-extras medical-rag search "your question" --textbook book-v1
+uv run --all-extras medical-rag list
+uv run --all-extras medical-rag delete book-v1 --yes
 ```
 
----
+CSV columns are `title,start_page,end_page`, with optional `method,confidence`. All page boundaries are **one-based physical PDF pages**, inclusive. Printed page labels can differ. Omit `--chapters` to detect automatically; detection falls back to the full document when no chapter headings are found. CSV ranges may omit pages intentionally, but must not overlap or exceed the PDF.
 
-## 📚 **Multi-Textbook Search System**
+Ingesting an existing ID replaces that textbook atomically. No command silently loads old pickle files. See [migration guidance](docs/migration.md) for the previous repository layout.
 
-**Location**: `multi_textbook_search/`
+## Run the API
 
-### Core Architecture (`core/` directory)
+Copy `.env.example` to `.env`, generate a key, and put it in `MEDICAL_RAG_API_KEY`:
 
-#### `models.py` (49 lines)
-
-**Data structures for the entire system**
-
-```python
-@dataclass
-class TextbookInfo:
-    """Metadata for each textbook"""
-    id: str                    # Unique identifier
-    title: str                 # Book title
-    edition: Optional[str]     # Edition info
-    year: Optional[str]        # Publication year
-    authors: Optional[List[str]] # Author list
-    file_path: str             # PDF file path
-    chapters_detected: int     # Number of chapters found
-    total_chunks: int          # Total text chunks created
-
-@dataclass
-class ProcessingResult:
-    """Result of processing a textbook"""
-    textbook_info: TextbookInfo
-    documents: List[Document]   # Chunked text documents
-    processing_time: float     # Time taken to process
-    success: bool              # Success/failure flag
-    error_message: Optional[str]
-
-class TextbookCollection:
-    """Container for multiple processed textbooks"""
-    textbooks: Dict[str, TextbookInfo]  # Registry of textbooks
-    all_documents: List[Document]       # All chunks from all books
+```sh
+uv run --all-extras python -c "import secrets; print(secrets.token_urlsafe(32))"
+uv run --all-extras --env-file .env uvicorn medical_rag.api:create_app --factory --host 127.0.0.1 --port 8000 --workers 1 --limit-concurrency 32 --no-access-log
 ```
 
-#### `processor.py` (280 lines)
+The API requires a key of at least 32 characters. It loads the model and warms the corpus index during startup. Create the corpus first using the quickstart. `GET /healthz` checks liveness; `GET /readyz` returns 503 for an empty corpus. These endpoints expose no passages.
 
-**Main text processing and chunking engine**
-
-```python
-class ProductionTextbookProcessor:
-    def __init__(self, chunk_size=800, chunk_overlap=100):
-        # RecursiveCharacterTextSplitter for intelligent chunking
-        self.text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=800,           # Target chunk size
-            chunk_overlap=100,        # Overlap between chunks
-            separators=["\n\n", "\n", " ", ""]  # Split priorities
-        )
+```sh
+curl -X POST http://127.0.0.1:8000/v1/search \
+  -H "Content-Type: application/json" \
+  -H "X-API-Key: <your-api-key>" \
+  -d '{"query":"burn wound assessment","top_k":3,"textbook_id":"sample"}'
 ```
 
-**Key Methods:**
+The response contains `results` and a `request_id`. Requests allow 1–2,000 query characters, 1–100 results, and at most 16 KiB of JSON. The API has no upload or delete endpoints. Place it behind HTTPS, gateway rate limits, and access controls for remote deployments; see [operations](docs/operations.md).
 
-1. **`load_chapter_data(csv_path)`**
+### Docker
 
-   - Loads chapter boundaries from CSV (created by chapter detection)
-   - Parses: title, start_page, end_page, confidence, method
+After setting the API key in `.env`:
 
-2. **`process_textbook(textbook_info, pdf_path, chapter_csv_path)`**
-
-   - Main orchestration method
-   - Loads chapter data → Extracts text → Creates chunks → Returns ProcessingResult
-
-3. **`_extract_text_from_pdf_with_chapters(pdf_path, chapters, textbook_info)`**
-
-   - Uses PyPDF2 for text extraction
-   - Processes each chapter based on page boundaries
-   - Extracts text page by page within chapter ranges
-   - Handles extraction errors gracefully
-
-4. **`_create_chapter_chunks(chapter_text, chapter_title, start_page, end_page, textbook_info)`**
-   - Splits chapter text into 800-character chunks with 100-char overlap
-   - Adds comprehensive metadata to each chunk:
-     ```python
-     metadata = {
-         'textbook_id': textbook_info.id,
-         'textbook_title': textbook_info.title,
-         'chapter': chapter_title,
-         'page_range': f"{start_page}-{end_page}",
-         'chunk_index': chunk_num,
-         'source_file': os.path.basename(pdf_path)
-     }
-     ```
-
-#### `search_engine.py` (215 lines)
-
-**Vector search engine with FAISS and caching**
-
-```python
-class ProductionSearchEngine:
-    def __init__(self, model_name="all-MiniLM-L6-v2", cache_dir="data"):
-        # Sentence transformer for embeddings (384 dimensions)
-        self.model = SentenceTransformer(model_name)
-        self.embedding_dim = 384
-
-        # FAISS index for fast similarity search
-        self.faiss_index = None
-        self.documents = []
-        self.embeddings = None
+```sh
+docker compose build
+docker compose run --rm api python /app/examples/create_sample_pdf.py --output /data/sample.pdf
+docker compose run --rm api medical-rag ingest /data/sample.pdf --id sample --title "Synthetic Clinical Textbook"
+docker compose run --rm api medical-rag index
+docker compose up -d
 ```
 
-**Key Methods:**
+The image contains the pinned model and serves without downloading it at runtime. Compose uses a persistent corpus volume, a read-only root filesystem, a non-root user, and a localhost port binding. Source PDFs and generated data are excluded from the image build context.
 
-1. **`build_index_from_collection(collection)`**
+## Project layout
 
-   - Builds searchable index from TextbookCollection
-   - Tries to load cached index first (for speed)
-   - Falls back to building fresh index if needed
-
-2. **`_build_fresh_index(documents, cache_path)`**
-
-   - Generates 384D embeddings for all document chunks
-   - Creates FAISS IndexFlatIP (inner product for cosine similarity)
-   - Normalizes embeddings for cosine similarity
-   - Caches everything to pickle file
-
-3. **`search(query, top_k=5, textbook_filter=None)`**
-   - Generates query embedding
-   - Searches FAISS index for similar documents
-   - Supports filtering by textbook
-   - Returns formatted results with scores and metadata
-
-**Caching Strategy:**
-
-- Saves complete index to: `faiss_semantic_search_vectors_384d.pkl`
-- Cache includes: documents, embeddings, FAISS index, metadata
-- Dramatically speeds up subsequent runs
-
----
-
-## 🚀 **Production Pipeline Files**
-
-### `optimized_pipeline.py` (205 lines)
-
-**Scalable textbook management system**
-
-```python
-class OptimizedTextbookManager:
-    """Manages textbooks with separate files for optimal performance"""
+```text
+src/medical_rag/
+  models.py         Domain types and citations
+  chapters.py       Detection and chapter CSV validation
+  chunking.py       Page-local text splitting
+  ingestion.py      PDF extraction and provenance
+  storage.py        SQLite corpus transactions and vector persistence
+  embeddings.py     Lazy Sentence Transformers adapter
+  search.py         Cache invalidation, cosine ranking, and filtering
+  config.py         Environment settings and validation
+  service.py        Production dependency construction
+  cli.py            JSON command-line interface
+  api.py            Authenticated HTTP retrieval
+  http_limits.py    Bounded HTTP request bodies
+tests/              Offline regressions and opt-in real-model verification
+examples/           Synthetic PDF generator
+docs/               Architecture, migration, and deployment guidance
 ```
 
-**Key Features:**
+## Development
 
-- **Separate Files**: Each textbook stored in individual pickle file
-- **Registry System**: Central metadata registry (`textbook_registry.pkl`)
-- **Memory Efficiency**: Only loads needed textbooks into memory
-- **Incremental Updates**: Can add/remove textbooks without rebuilding everything
-
-**File Structure:**
-
-```
-data/
-├── textbook_registry.pkl           # Central registry
-├── textbooks/
-│   ├── nursing_skills_chunks.pkl   # Individual textbook chunks
-│   └── emergency_medicine_chunks.pkl
-└── faiss_semantic_search_vectors_384d.pkl  # Search index
+```sh
+uv sync --locked --all-extras
+uv run --all-extras ruff check src tests examples
+uv run --all-extras ruff format --check src tests examples
+uv run --all-extras pytest -m "not integration"
+uv build
 ```
 
-### `production_search.py` (125 lines)
+Set `MEDICAL_RAG_RUN_INTEGRATION=true` and run `uv run --all-extras pytest -m integration` to test the real embedding model, FAISS, offline cache reuse, and authenticated API together. CI tests Linux and Windows on Python 3.11–3.13, audits runtime dependencies, and builds and smoke-tests the container. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**User-facing search interface**
+## Scope and limitations
 
-```python
-def quick_search(query: str, top_k: int = 3, textbook_filter: str = None):
-    """Production search with intelligent fallbacks"""
-```
+This is a deployment-oriented retrieval foundation for controlled corpora. Retrieval quality depends on extraction, chapter maps, source quality, and embedding choice; the default model is general-purpose and has not been validated for clinical use. Scanned pages need OCR before ingestion. Text extraction does not reconstruct tables or images. PDF parsing should run in an isolated ingestion environment for untrusted documents.
 
-**Fallback Strategy:**
+The engine holds the full corpus and vectors in memory and rebuilds corpus embeddings after changes. It targets small to medium collections on one host, not distributed search. A single API worker serializes inference; gateway timeouts and rate limits remain deployment responsibilities. There is no answer generation, medical accuracy evaluation, or compliance certification.
 
-1. Try optimized structure (separate files per textbook)
-2. Fall back to legacy unified file
-3. Fall back to single textbook mode
+The repository does not currently declare a project license. Third-party dependencies retain their own licenses; [PyMuPDF offers AGPL and commercial terms](https://pymupdf.io/licensing). Resolve licensing and source-document rights before redistribution. No patient records, private textbooks, or credentials belong in Git.
 
-### Utility Scripts
-
-#### `view_textbooks.py`
-
-- Lists all processed textbooks
-- Shows statistics (chapters, chunks, processing time)
-- Displays textbook metadata
-
-#### `delete_textbook.py`
-
-- Removes textbook from registry
-- Deletes associated chunk files
-- Rebuilds search index
-
-#### `inspect_faiss_index_full.py`
-
-- Analyzes FAISS index structure
-- Shows embedding statistics
-- Validates index integrity
-
----
-
-## 🔄 **Complete System Workflow**
-
-### Step 1: Chapter Detection
-
-```bash
-cd chapter_detection_system
-python run.py "../data_files/textbook.pdf"
-```
-
-**Output**: `output/textbook_chapters.csv`
-
-### Step 2: Text Processing & Chunking
-
-```python
-# In optimized_pipeline.py or custom script
-processor = ProductionTextbookProcessor()
-result = processor.process_textbook(
-    textbook_info=TextbookInfo(...),
-    pdf_path="data_files/textbook.pdf",
-    chapter_csv_path="chapter_detection_system/output/textbook_chapters.csv"
-)
-```
-
-### Step 3: Index Building
-
-```python
-search_engine = ProductionSearchEngine()
-search_engine.build_index_from_collection(collection)
-```
-
-### Step 4: Search
-
-```python
-results = search_engine.search("diabetes treatment", top_k=5)
-```
-
----
-
-## 💾 **Data Storage Strategy**
-
-### File Organization
-
-```
-data/
-├── textbook_registry.pkl                 # Central metadata
-├── faiss_semantic_search_vectors_384d.pkl # Search index cache
-└── textbooks/
-    ├── nursing_skills_2e_chunks.pkl      # Individual textbook data
-    └── emergency_medicine_chunks.pkl
-```
-
-### Cache Files
-
-- **Vector Cache**: Prevents re-embedding documents (expensive operation)
-- **Index Cache**: FAISS index saved to disk for instant loading
-- **Document Cache**: Processed chunks stored per textbook
-
----
-
-## 🔧 **Key Technologies**
-
-### PDF Processing
-
-- **PyMuPDF (fitz)**: Chapter detection, font analysis
-- **PyPDF2**: Text extraction from PDF pages
-
-### Text Processing
-
-- **LangChain**: Document chunking with RecursiveCharacterTextSplitter
-- **Regex**: Pattern matching for chapter detection
-
-### Vector Search
-
-- **Sentence Transformers**: "all-MiniLM-L6-v2" model (384D embeddings)
-- **FAISS**: Fast similarity search with IndexFlatIP
-- **NumPy**: Vector operations and normalization
-
-### Data Management
-
-- **Pickle**: Serialization for caching and storage
-- **CSV**: Chapter boundary data exchange
-- **Python Dataclasses**: Type-safe data structures
-
----
-
-## 🎯 **System Strengths**
-
-1. **Intelligent Chapter Detection**: Multiple fallback methods ensure chapters are found
-2. **Scalable Architecture**: Separate files per textbook, cached indexes
-3. **Production Ready**: Error handling, logging, graceful fallbacks
-4. **Metadata Rich**: Comprehensive tracking of textbook, chapter, and chunk information
-5. **Fast Search**: FAISS indexing with caching for sub-second searches
-6. **Flexible**: Supports single or multi-textbook workflows
-
----
-
-## 🚀 **Performance Characteristics**
-
-### Processing Speed
-
-- **Chapter Detection**: ~30 seconds per textbook
-- **Text Extraction**: ~1-2 minutes per textbook (depends on size)
-- **Embedding Generation**: ~10-30 seconds per textbook
-- **Search**: <100ms per query (after index is built)
-
-### Memory Usage
-
-- **Per Textbook**: ~50-200MB during processing
-- **Search Index**: ~100-500MB for multiple textbooks
-- **Runtime**: ~200-500MB for active search engine
-
-### Storage
-
-- **Source PDFs**: 10-100MB each
-- **Processed Chunks**: ~10-50MB per textbook
-- **Search Index**: ~50-200MB
-- **Total**: ~100MB-1GB for full system
-
----
-
-## 🔄 **Current State & Next Steps**
-
-### What's Working
-
-✅ Chapter detection with high accuracy  
-✅ Multi-textbook processing pipeline  
-✅ Fast semantic search with FAISS  
-✅ Production-ready caching system  
-✅ Comprehensive metadata tracking
-
-### Migration to Pinecone
-
-📋 **Migration guide created** in `pinecone-migration.md`  
-🎯 **Zero changes** to text processing  
-🔄 **Only search engine layer** needs updating  
-☁️ **Cloud scalability** and collaboration benefits
-
-This system is production-ready and well-architected for scaling to hundreds of textbooks with minimal performance impact.
+Read [architecture](docs/architecture.md), [operations](docs/operations.md), [migration](docs/migration.md), and [security](SECURITY.md) for implementation details and deployment boundaries.
